@@ -8,7 +8,7 @@ function App() {
 
     const ansFetcher = async () => {
       const response = await fetch(
-        `http://localhost:4000/find-sum?a=${a}&&b=${b}`
+        `http://ec2-3-110-121-1.ap-south-1.compute.amazonaws.com:4000/find-sum?a=${a}&&b=${b}`
       );
       const data = await response.json();
       setAns(data.result)
